@@ -1,3 +1,4 @@
+
 def convert_number(number: str, from_base: int, to_base: int) -> str:
     """Converts a number from one base to another (from base 2 to 16)."""
 
