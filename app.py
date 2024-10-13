@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
 app = Flask(__name__, static_folder='build')
-CORS(app)
+CORS(app) # Enabl CORS for all routes
 
 @app.route('/')
 def serve():
@@ -78,9 +78,16 @@ def convert():
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
 
+# Flask specific error handling
 @app.errorhandler(500)
 def internal_error(error):
     return "An internal error occurred: {}".format(error), 500
+
+# Mobile specific error handling
+@app.before_request
+def log_request_info():
+    app.logger.debug('Headers: %s', request.headers)
+    app.logger.debug('Body: %s', request.get_data())
 
 
 if __name__ == "__main__":
