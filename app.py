@@ -1,10 +1,22 @@
 from multiprocessing.managers import Value
 import re
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='build')
 CORS(app)
+
+@app.route('/')
+def serve():
+    return send_from_directory(app.static_folder, 'index.html')
+
+# Serve static files from build directory
+@app.route('/<path:path>')
+def static_files(path):
+    return send_from_directory(app.static_folder, path)
+
+
+
 
 HEX_MAP = "0123456789ABCDEF"
 BASE_REGEX = {
@@ -13,7 +25,6 @@ BASE_REGEX = {
     10: re.compile(r'^[0-9]+$'),
     16: re.compile(r'^[0-9A-F]+$', re.IGNORECASE)
 }
-
 
 def decimal_to_base(decimal_number: int, base: int) -> str:
     """Converts a decimal number to any base between 2 and 16."""
