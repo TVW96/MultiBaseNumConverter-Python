@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="209f808a-c31c-483c-afc3-491be004e9a4" name="Changes" comment="done" />
+    <list default="true" id="209f808a-c31c-483c-afc3-491be004e9a4" name="Changes" comment="done">
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/calc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.2ab10f8a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.2ab10f8a.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/453.0f8e5ff2.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/453.0f8e5ff2.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.9e8009af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.9e8009af.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.9e8009af.js.map" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +202,7 @@
       <workItem from="1728850783836" duration="1714000" />
       <workItem from="1728857033718" duration="2259000" />
       <workItem from="1728871473468" duration="1295000" />
-      <workItem from="1728939064904" duration="1257000" />
+      <workItem from="1728939064904" duration="1561000" />
     </task>
     <task id="LOCAL-00001" summary="intial set up">
       <option name="closed" value="true" />
